@@ -8,7 +8,7 @@ Analisys can be done using making screenshots, pasting from clipboards and loadi
 
 Currently four type of filters have been implemented: Deuteranopia, Protanopia, Tritanopia and Grayscale.
 
-## Thing to do
+## Working in progress
 [ ] Zoom and Pan on image panel
 
 Suggestions are welcome!
