@@ -17,4 +17,11 @@ This is a sample of a color picker view, just for demo purposes.
 ## Work in progress
 [ ] Zoom and Pan actions on image panel
 
+## Releases
+
+A pre-release is available, you need at leeast Java 1.8 installed on your computer.
+
+Launch the appliaction with the following command
+> java -jar DaltonJ-1.0-alpha.jar
+
 Suggestions are welcome!
