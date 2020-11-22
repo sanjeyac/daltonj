@@ -13,7 +13,7 @@ public class MainForm {
     private JToggleButton grayscaleToggleButton;
     private JToggleButton deuteranopiaToggleButton;
     private JToggleButton tritanopiaToggleButton;
-    private JToggleButton protanotopiaToggleButton;
+    private JToggleButton protanopiaToggleButton;
     private JToggleButton normalToggleButton;
     private JButton clipboardButton;
 
@@ -23,7 +23,7 @@ public class MainForm {
         filtersButtonGroup.add(grayscaleToggleButton);
         filtersButtonGroup.add(deuteranopiaToggleButton);
         filtersButtonGroup.add(tritanopiaToggleButton);
-        filtersButtonGroup.add(protanotopiaToggleButton);
+        filtersButtonGroup.add(protanopiaToggleButton);
         filtersButtonGroup.add(normalToggleButton);
     }
 
@@ -55,8 +55,8 @@ public class MainForm {
         return tritanopiaToggleButton;
     }
 
-    public JToggleButton getProtanotopiaButton() {
-        return protanotopiaToggleButton;
+    public JToggleButton getProtanopiaButton() {
+        return protanopiaToggleButton;
     }
 
     public JToggleButton getNormalButton() {

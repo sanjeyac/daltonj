@@ -14,7 +14,7 @@ public class Filters {
 
     public static final AbstractFilter DEUTERANOPIA = new RedGreenFilter(9591, 23173, -730);
 
-    public static final AbstractFilter PROTANOTOPIA = new RedGreenFilter(3683, 29084, 131);
+    public static final AbstractFilter PROTANOPIA = new RedGreenFilter(3683, 29084, 131);
 
     public static final AbstractFilter TRITANOPIA = new TritanFilter();
 

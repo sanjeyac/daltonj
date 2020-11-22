@@ -64,10 +64,10 @@
               <text value="Deuteranopia" noi18n="true"/>
             </properties>
           </component>
-          <component id="23e53" class="javax.swing.JToggleButton" binding="protanotopiaToggleButton" default-binding="true">
+          <component id="23e53" class="javax.swing.JToggleButton" binding="protanopiaToggleButton">
             <constraints/>
             <properties>
-              <text value="Protanotopia" noi18n="true"/>
+              <text value="Protanopia" noi18n="true"/>
             </properties>
           </component>
           <component id="33268" class="javax.swing.JToggleButton" binding="tritanopiaToggleButton" default-binding="true">

@@ -77,7 +77,7 @@ public class DaltonjApp {
         setFilter(mainForm.getGrayscaleButton(), imagePanel, Filters.GRAY_SCALE);
         setFilter(mainForm.getTritanopiaButton(), imagePanel, Filters.TRITANOPIA);
         setFilter(mainForm.getDeuteranopiaButton(), imagePanel, Filters.DEUTERANOPIA);
-        setFilter(mainForm.getProtanotopiaButton(), imagePanel, Filters.PROTANOTOPIA);
+        setFilter(mainForm.getProtanopiaButton(), imagePanel, Filters.PROTANOPIA);
         setFilter(mainForm.getNormalButton(), imagePanel, null);
     }
 
