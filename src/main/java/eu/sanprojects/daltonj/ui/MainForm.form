@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="eu.sanprojects.daltonj.ui.MainForm">
+  <grid id="27dc6" binding="rootComponent" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="939" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <toolbar id="7f3ed">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <floatable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5b468" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="From:" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="690db" class="javax.swing.JButton" binding="getScreenshotButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Screenshot" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="4f905" class="javax.swing.JButton" binding="clipboardButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Clipboard" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="4e4ae" class="javax.swing.JButton" binding="openFileButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="File" noi18n="true"/>
+            </properties>
+          </component>
+          <hspacer id="ddbe6">
+            <constraints/>
+          </hspacer>
+          <component id="5f2c7" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Filter:" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="ca723" class="javax.swing.JToggleButton" binding="normalToggleButton">
+            <constraints/>
+            <properties>
+              <text value="Normal" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="7e359" class="javax.swing.JToggleButton" binding="deuteranopiaToggleButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Deuteranopia" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="23e53" class="javax.swing.JToggleButton" binding="protanotopiaToggleButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Protanotopia" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="33268" class="javax.swing.JToggleButton" binding="tritanopiaToggleButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Tritanopia" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="4717b" class="javax.swing.JToggleButton" binding="grayscaleToggleButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Grayscale" noi18n="true"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <grid id="e5ed" binding="imagePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
