@@ -10,6 +10,10 @@ import java.util.function.Consumer;
 
 public class Screenshot {
 
+    /**
+     * Generate a screenshot
+     * This is an async method so the result is returned in a Consumer callback
+     */
     public static void screenshot(Consumer<BufferedImage> onImageReceived) {
         new Thread(() -> {
             BufferedImage bufferedImage  = null;
@@ -19,8 +23,6 @@ public class Screenshot {
                 robot = new Robot();
                 Rectangle rectangle = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
                 bufferedImage = robot.createScreenCapture(rectangle);
-//                JLabel picLabel = new JLabel(new ImageIcon(bufferedImage));
-//                picLabel.setVisible(true);
                 File file = new File("/tmp/screen-capture.png");
                 boolean status = ImageIO.write(bufferedImage, "png", file);
                 Thread.sleep(1000);

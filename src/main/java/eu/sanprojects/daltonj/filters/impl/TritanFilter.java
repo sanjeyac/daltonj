@@ -1,5 +1,6 @@
 package eu.sanprojects.daltonj.filters.impl;
 
+import eu.sanprojects.daltonj.filters.AbstractFilter;
 import eu.sanprojects.daltonj.filters.utils.GammaCorrection;
 
 import java.awt.image.BufferedImage;
@@ -11,7 +12,7 @@ import java.awt.image.DataBufferInt;
  * Method extracted from ColorOracle
  * https://github.com/nvkelso/color-oracle-java
  */
-public class TritanFilter extends AbstractFilter  {
+public class TritanFilter extends AbstractFilter {
 
     @Override
     public BufferedImage filter(BufferedImage input, BufferedImage dst) {

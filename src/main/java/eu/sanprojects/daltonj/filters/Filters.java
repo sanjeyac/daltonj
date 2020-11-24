@@ -1,6 +1,5 @@
 package eu.sanprojects.daltonj.filters;
 
-import eu.sanprojects.daltonj.filters.impl.AbstractFilter;
 import eu.sanprojects.daltonj.filters.impl.GrayscaleFilter;
 import eu.sanprojects.daltonj.filters.impl.RedGreenFilter;
 import eu.sanprojects.daltonj.filters.impl.TritanFilter;

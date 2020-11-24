@@ -1,6 +1,6 @@
 package eu.sanprojects.daltonj.ui.components;
 
-import eu.sanprojects.daltonj.filters.impl.AbstractFilter;
+import eu.sanprojects.daltonj.filters.AbstractFilter;
 
 import javax.swing.JPanel;
 import java.awt.Graphics;

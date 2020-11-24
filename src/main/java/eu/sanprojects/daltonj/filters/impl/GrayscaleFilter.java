@@ -1,5 +1,7 @@
 package eu.sanprojects.daltonj.filters.impl;
 
+import eu.sanprojects.daltonj.filters.AbstractFilter;
+
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 

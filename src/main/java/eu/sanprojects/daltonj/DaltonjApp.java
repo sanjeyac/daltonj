@@ -3,12 +3,12 @@ package eu.sanprojects.daltonj;
 import com.github.weisj.darklaf.LafManager;
 import com.github.weisj.darklaf.theme.DarculaTheme;
 import eu.sanprojects.daltonj.filters.Filters;
-import eu.sanprojects.daltonj.filters.impl.AbstractFilter;
+import eu.sanprojects.daltonj.filters.AbstractFilter;
 import eu.sanprojects.daltonj.ui.MainForm;
 import eu.sanprojects.daltonj.ui.components.Clipboard;
-import eu.sanprojects.daltonj.ui.components.ImagePanel;
 import eu.sanprojects.daltonj.ui.components.Screenshot;
 import eu.sanprojects.daltonj.ui.components.fileloader.FileLoader;
+import eu.sanprojects.daltonj.ui.components.NavImagePanel;
 
 import javax.swing.JFrame;
 import javax.swing.JToggleButton;
@@ -30,11 +30,12 @@ public class DaltonjApp {
         MainForm mainForm = new MainForm();
 
         // add custom image JPanel to UI
-        ImagePanel imagePanel = new ImagePanel();
+//        ImagePanel imagePanel = new ImagePanel();
+        NavImagePanel navigableImagePanel = new NavImagePanel();
         mainForm.getImagePanel().setLayout(new CardLayout());
-        mainForm.getImagePanel().add(imagePanel);
+        mainForm.getImagePanel().add(navigableImagePanel);
 
-        setupActionListeners(frame, mainForm, imagePanel);
+        setupActionListeners(frame, mainForm, navigableImagePanel);
 
         mainForm.getNormalButton().setSelected(true);
 
@@ -49,12 +50,12 @@ public class DaltonjApp {
     /**
      * Setup all button click listeners
      */
-    private static void setupActionListeners(JFrame frame, MainForm mainForm, ImagePanel imagePanel) {
+    private static void setupActionListeners(JFrame frame, MainForm mainForm, NavImagePanel imagePanel) {
         mainForm.getGetScreenshotButton().addActionListener(e -> {
             System.out.println("clicked");
             frame.setVisible(false);
             Screenshot.screenshot(img -> {
-                imagePanel.setBufferedImage(img);
+                imagePanel.setImage(img);
                 frame.setVisible(true);
             });
         });
@@ -62,14 +63,14 @@ public class DaltonjApp {
         mainForm.getOpenFileButton().addActionListener(e -> {
             BufferedImage image = FileLoader.loadImage(frame);
             if (image != null) {
-                imagePanel.setBufferedImage(image);
+                imagePanel.setImage(image);
             }
         });
 
         mainForm.getClipboardButton().addActionListener(e -> {
             BufferedImage imageFromClipboard = Clipboard.getImageFromClipboard();
             if (imageFromClipboard != null) {
-                imagePanel.setBufferedImage(imageFromClipboard);
+                imagePanel.setImage(imageFromClipboard);
             }
         });
 
@@ -85,11 +86,9 @@ public class DaltonjApp {
     /**
      * Enable filter on click
      */
-    private static void setFilter(JToggleButton button, ImagePanel imagePanel, AbstractFilter filter) {
+    private static void setFilter(JToggleButton button, NavImagePanel imagePanel, AbstractFilter filter) {
         button.addActionListener(e -> {
-            imagePanel.setFilter(filter);
-            imagePanel.validate();
-            imagePanel.repaint();
+            imagePanel.applyFilter(filter);
         });
     }
 

@@ -1,4 +1,6 @@
-package eu.sanprojects.daltonj.filters.impl;
+package eu.sanprojects.daltonj.filters;
+
+import eu.sanprojects.daltonj.filters.utils.BufferedImageUtils;
 
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -34,14 +36,7 @@ public abstract class AbstractFilter implements BufferedImageOp {
         }
 
         //convert
-        BufferedImage input;
-        int width = src.getWidth(null);
-        int height = src.getHeight(null);
-        input = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-        Graphics2D bGr = input.createGraphics();
-        bGr.drawImage(src, 0, 0, null);
-        bGr.dispose();
-        return input;
+        return BufferedImageUtils.clone(src);
     }
 
     /**

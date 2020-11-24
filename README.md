@@ -15,7 +15,13 @@ This is a sample of a color picker view, just for demo purposes.
 <img src="samples/screenshot-normal.jpg?raw=true" width="200"> <img src="samples/screenshot-deuteran.jpg?raw=true" width="200"> <img src="samples/screenshot-protan.jpg?raw=true" width="200"> <img src="samples/screenshot-tritan.jpg?raw=true" width="200"> <img src="samples/screenshot-gray.jpg?raw=true" width="200">
 
 ## Work in progress
-[ ] Zoom and Pan actions on image panel
+[X] Zoom and Pan actions on image panel
+
+[ ] Improve UI/UX
+
+## Credits
+
+Image filters from  ColorOracle - https://github.com/nvkelso/color-oracle-java
 
 ## Releases
 
