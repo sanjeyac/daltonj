@@ -10,7 +10,7 @@ Currently four types of filters have been implemented: Deuteranopia, Protanopia,
 
 ## Samples
 
-This is a sample of a color picker view, just for demo purposes.
+This is a sample of a photo, just for demo purposes.
 
 <img src="samples/screenshot-normal.jpg?raw=true" width="200"> <img src="samples/screenshot-deuteran.jpg?raw=true" width="200"> <img src="samples/screenshot-protan.jpg?raw=true" width="200"> <img src="samples/screenshot-tritan.jpg?raw=true" width="200"> <img src="samples/screenshot-gray.jpg?raw=true" width="200">
 
@@ -22,6 +22,8 @@ This is a sample of a color picker view, just for demo purposes.
 ## Credits
 
 Image filters from  ColorOracle - https://github.com/nvkelso/color-oracle-java
+
+Image of demo by Simon Berger - https://unsplash.com/photos/UqCnDyc_3vA  
 
 ## Releases
 
