@@ -1,5 +1,6 @@
 package eu.sanprojects.daltonj.ui;
 
+import javax.swing.Box;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -96,6 +97,7 @@ public class MainForm {
         openFileButton = new JButton();
         openFileButton.setText("File");
         toolbar.add(openFileButton);
+        toolbar.add(Box.createHorizontalGlue());
         final JLabel label2 = new JLabel();
         label2.setText("Filter:");
         toolbar.add(label2);
